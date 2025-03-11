@@ -1,36 +1,42 @@
-public abstract class person{
-    private String name;
-    private int age ;
-    private String address;
-    // this constructor is useful in  subclasses//this can be accesed by using super keyword without object //creation of this class although if we create the object of this class then error occurs bcaz of abstract class 
-    public person(String name,int age,String address){
-        this.name=name;
-        this.age=age;
-        this.address=address;
+package school_managment;
 
-    }
-    //why setter are used even constructor is created ?
-    //To : modify the initial value of instance variable 
-    public String getName(){
-        return name;
-        
-    }
-    public void setName(){
-        this.name=name;
-    }
-    public int getAge(){
-        return age;
-        
-    }
-    public void setAge(){
-        this.age=age;
-    }
-    public String getAddress(){
-        return address;
-        
-    }
-    public void setAddress(){
-        this.address=address;
-    }
-    public abstract void displayinfo();
+public abstract class Person {
+	private String name;
+	private String address;
+	private int age;
+
+	public Person(String name, String address, int age) {
+		this.name = name;
+		this.address = address;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public abstract void displayinfo();
+	
+	
+
 }

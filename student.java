@@ -1,37 +1,42 @@
-public class student extends person{
-    private int studentID;
-    private String course;
-    public student(String name,int age,String address,int studentID,String course){
-        super(name, age, address);
-        this.studentID=studentID;
-        this.course=course;
+package school_managment;
 
-    }
-    public int getstudentID(){
-        return studentID;
-    }
-    public void setstudentID(){
-        this.studentID=studentID;
-    }
-    public String getcourse(){
-        return course;
-    }
-    public void setcouse(){
-        this.course=course;
-    }
-@Override
-public void displayinfo() {
-    System.out.println("Student ID :"+studentID);//directly accessed in this class
-    // System.out.println("Name :"+name);// we cannnot access name directly because it is private in base class 
-    // here the concept of encapsulation used
-    //access using getter and setter
-    System.out.println("Name : "+getName());
-    System.out.println("Age : "+getAge());
-    System.out.println("Address : "+getAddress());
-    System.out.println("Course : "+course);
+public class Student extends Person {
+	private int studentId;
+	private String course;
 
+	public Student(String name, String address, int age, int studentId, String course) {
+		super(name, address, age);
+		this.studentId = studentId;
+		this.course = course;
+	}
 
-}
+	public int getStudentId() {
+		return studentId;
+	}
 
-    
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
+	public void displayinfo() {
+		System.out.println("Student ID :" + getStudentId());// directly accessed in this class
+		// System.out.println("Name :"+name);// we cannnot access name directly because
+		// it is private in base class
+		// here the concept of encapsulation used
+		// access using getter and setter
+		System.out.println("Name : " + getName());
+		System.out.println("Age : " + getAge());
+		System.out.println("Address : " + getAddress());
+		System.out.println("Course : " + course);
+
+	}
+
 }
