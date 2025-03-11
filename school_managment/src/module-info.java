@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module school_managment {
-}
