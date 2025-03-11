@@ -13,7 +13,7 @@ public class Main {
 //		System.out.println("Enter number of students: ");
 //		int numStudents = scanner.nextInt();
 //		scanner.nextLine(); // Consume newline
-
+//Hi for check
 //		for (int i = 0; i < numStudents; i++) {
 //			System.out.println("Enter student name: ");
 //			String name = scanner.nextLine();
